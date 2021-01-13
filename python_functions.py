@@ -14,6 +14,19 @@ def maxofthree(x,y,z):
         return x
     elif y>z:
         return y
-    else:
-        return z
+    return z
 print(maxofthree(1,45,5))
+
+'''
+2. Write a Python function to sum all the numbers in a list. Go to the editor
+Sample List : (8, 2, 3, 0, 7)
+Expected Output : 20
+'''
+def sum_of_num(list):
+    sum=0
+    for num in list:
+        sum+=num
+    return sum
+
+
+print(sum_of_num([8, 2, 3, 0, 7]))
