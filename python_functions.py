@@ -1,4 +1,4 @@
-print("this is an easy python function that basically displays output to the user...")
+#print("this is an easy python function that basically displays output to the user...")
 
 '''
 All questions originate from w3resource:
@@ -15,7 +15,7 @@ def maxofthree(x,y,z):
     elif y>z:
         return y
     return z
-print(maxofthree(1,45,5))
+#print(maxofthree(1,45,5))
 
 '''
 2. Write a Python function to sum all the numbers in a list.
@@ -29,7 +29,7 @@ def sum_of_num(list):
     return sum
 
 
-print(sum_of_num([8, 2, 3, 0, 7]))
+#print(sum_of_num([8, 2, 3, 0, 7]))
 
 
 '''
@@ -44,4 +44,20 @@ def mult_of_num(list):
     return mult
 
 
-print(mult_of_num([8, 2, 3, -1, 7]))
+#print(mult_of_num([8, 2, 3, -1, 7]))
+
+'''
+Write a Python program to reverse a string. Go to the editor
+Sample String : "1234abcd"
+Expected Output : "dcba4321"
+'''
+def reverse(some_string):
+    reversed_string_arr= []
+    rev_string=""
+    for char in some_string:
+        reversed_string_arr.append(char)
+    for s in range(len(reversed_string_arr)):
+        rev_string+=reversed_string_arr.pop()
+    return rev_string
+
+print(reverse("1234abcd"))
