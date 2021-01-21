@@ -47,7 +47,7 @@ def mult_of_num(list):
 #print(mult_of_num([8, 2, 3, -1, 7]))
 
 '''
-Write a Python program to reverse a string. Go to the editor
+4. Write a Python program to reverse a string. Go to the editor
 Sample String : "1234abcd"
 Expected Output : "dcba4321"
 '''
@@ -60,4 +60,46 @@ def reverse(some_string):
         rev_string+=reversed_string_arr.pop()
     return rev_string
 
-print(reverse("1234abcd"))
+#print(reverse("1234abcd"))
+
+'''
+5. Write a Python function to calculate the factorial of a number
+(a non-negative integer). The function accepts the number as an argument.
+'''
+def fact(num):
+    if num <=1:
+        return 1
+    else:
+        return num * fact(num-1)
+#print(fact(10))
+
+'''
+6. Write a Python function to check whether a number is in a given range.
+'''
+def in_range(num,r1,r2):
+    if num >r1 and num<r2:
+        return True
+    return False
+
+print(in_range(37,4,67))
+
+
+'''
+7. Write a Python function that accepts a string and calculate the number of
+upper case letters and lower case letters.
+Sample String : 'The quick Brow Fox'
+Expected Output :
+No. of Upper case characters : 3
+No. of Lower case Characters : 12
+'''
+def tallyLetters(str):
+    num_upper=0
+    num_lower=0
+    for char in str:
+        if char.isupper():
+            num_upper+=1
+        else:
+            num_lower+=1
+    return "No. of Upper case characters : {} \nNo. of Lower case characters : {}".format(num_upper,num_lower)
+
+tallyLetters('The quick Brow Fox')
